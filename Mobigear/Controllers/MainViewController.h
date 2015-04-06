@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  MainViewController.h
 //  Mobigear
 //
 //  Created by Sveta Kilovata on 06/04/15.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) IBOutlet UIWindow *window;
+@interface MainViewController : UIViewController
 
 @end
-

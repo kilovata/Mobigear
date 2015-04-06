@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RegistrationViewController.h
 //  Mobigear
 //
 //  Created by Sveta Kilovata on 06/04/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface RegistrationViewController : UIViewController
 
 @end
-

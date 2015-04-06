@@ -11,11 +11,13 @@
 		B54B7F061AD2ED6300C79C8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B54B7F051AD2ED6300C79C8B /* main.m */; };
 		B54B7F091AD2ED6300C79C8B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B54B7F081AD2ED6300C79C8B /* AppDelegate.m */; };
 		B54B7F0C1AD2ED6300C79C8B /* Mobigear.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B54B7F0A1AD2ED6300C79C8B /* Mobigear.xcdatamodeld */; };
-		B54B7F0F1AD2ED6300C79C8B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B54B7F0E1AD2ED6300C79C8B /* ViewController.m */; };
-		B54B7F121AD2ED6300C79C8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54B7F101AD2ED6300C79C8B /* Main.storyboard */; };
 		B54B7F141AD2ED6300C79C8B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B54B7F131AD2ED6300C79C8B /* Images.xcassets */; };
-		B54B7F171AD2ED6300C79C8B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B54B7F151AD2ED6300C79C8B /* LaunchScreen.xib */; };
 		B54B7F231AD2ED6300C79C8B /* MobigearTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B54B7F221AD2ED6300C79C8B /* MobigearTests.m */; };
+		B54B7F2E1AD2F7EA00C79C8B /* Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = B54B7F2D1AD2F7EA00C79C8B /* Window.xib */; };
+		B54B7F341AD2FA2E00C79C8B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B54B7F321AD2FA2E00C79C8B /* MainViewController.m */; };
+		B54B7F3D1AD307E700C79C8B /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B54B7F3B1AD307E700C79C8B /* RegistrationViewController.m */; };
+		B54B7F3E1AD307E700C79C8B /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B54B7F3C1AD307E700C79C8B /* RegistrationViewController.xib */; };
+		B54B7F421AD30EBE00C79C8B /* AuthorizationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B54B7F411AD30EBE00C79C8B /* AuthorizationModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +38,18 @@
 		B54B7F071AD2ED6300C79C8B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B54B7F081AD2ED6300C79C8B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B54B7F0B1AD2ED6300C79C8B /* Mobigear.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mobigear.xcdatamodel; sourceTree = "<group>"; };
-		B54B7F0D1AD2ED6300C79C8B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B54B7F0E1AD2ED6300C79C8B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B54B7F111AD2ED6300C79C8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B54B7F131AD2ED6300C79C8B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B54B7F161AD2ED6300C79C8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B54B7F1C1AD2ED6300C79C8B /* MobigearTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobigearTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54B7F211AD2ED6300C79C8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B54B7F221AD2ED6300C79C8B /* MobigearTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MobigearTests.m; sourceTree = "<group>"; };
+		B54B7F2D1AD2F7EA00C79C8B /* Window.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Window.xib; sourceTree = "<group>"; };
+		B54B7F311AD2FA2E00C79C8B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		B54B7F321AD2FA2E00C79C8B /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		B54B7F3A1AD307E700C79C8B /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationViewController.h; sourceTree = "<group>"; };
+		B54B7F3B1AD307E700C79C8B /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationViewController.m; sourceTree = "<group>"; };
+		B54B7F3C1AD307E700C79C8B /* RegistrationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
+		B54B7F401AD30EBE00C79C8B /* AuthorizationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizationModel.h; sourceTree = "<group>"; };
+		B54B7F411AD30EBE00C79C8B /* AuthorizationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizationModel.m; sourceTree = "<group>"; };
 		BB2EF2DDD8E561B8FC34143D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E473505EB907C25B0760FD2C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -107,13 +113,12 @@
 		B54B7F021AD2ED6300C79C8B /* Mobigear */ = {
 			isa = PBXGroup;
 			children = (
+				B54B7F3F1AD30EAD00C79C8B /* Models */,
 				B54B7F071AD2ED6300C79C8B /* AppDelegate.h */,
 				B54B7F081AD2ED6300C79C8B /* AppDelegate.m */,
-				B54B7F0D1AD2ED6300C79C8B /* ViewController.h */,
-				B54B7F0E1AD2ED6300C79C8B /* ViewController.m */,
-				B54B7F101AD2ED6300C79C8B /* Main.storyboard */,
+				B54B7F301AD2FA1D00C79C8B /* Controllers */,
+				B54B7F2C1AD2F7E200C79C8B /* Views */,
 				B54B7F131AD2ED6300C79C8B /* Images.xcassets */,
-				B54B7F151AD2ED6300C79C8B /* LaunchScreen.xib */,
 				B54B7F0A1AD2ED6300C79C8B /* Mobigear.xcdatamodeld */,
 				B54B7F031AD2ED6300C79C8B /* Supporting Files */,
 			);
@@ -144,6 +149,35 @@
 				B54B7F211AD2ED6300C79C8B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B54B7F2C1AD2F7E200C79C8B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B54B7F2D1AD2F7EA00C79C8B /* Window.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B54B7F301AD2FA1D00C79C8B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B54B7F311AD2FA2E00C79C8B /* MainViewController.h */,
+				B54B7F321AD2FA2E00C79C8B /* MainViewController.m */,
+				B54B7F3A1AD307E700C79C8B /* RegistrationViewController.h */,
+				B54B7F3B1AD307E700C79C8B /* RegistrationViewController.m */,
+				B54B7F3C1AD307E700C79C8B /* RegistrationViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B54B7F3F1AD30EAD00C79C8B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B54B7F401AD30EBE00C79C8B /* AuthorizationModel.h */,
+				B54B7F411AD30EBE00C79C8B /* AuthorizationModel.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,9 +262,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B54B7F121AD2ED6300C79C8B /* Main.storyboard in Resources */,
-				B54B7F171AD2ED6300C79C8B /* LaunchScreen.xib in Resources */,
 				B54B7F141AD2ED6300C79C8B /* Images.xcassets in Resources */,
+				B54B7F2E1AD2F7EA00C79C8B /* Window.xib in Resources */,
+				B54B7F3E1AD307E700C79C8B /* RegistrationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,9 +316,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B54B7F091AD2ED6300C79C8B /* AppDelegate.m in Sources */,
+				B54B7F421AD30EBE00C79C8B /* AuthorizationModel.m in Sources */,
 				B54B7F061AD2ED6300C79C8B /* main.m in Sources */,
-				B54B7F0F1AD2ED6300C79C8B /* ViewController.m in Sources */,
 				B54B7F0C1AD2ED6300C79C8B /* Mobigear.xcdatamodeld in Sources */,
+				B54B7F341AD2FA2E00C79C8B /* MainViewController.m in Sources */,
+				B54B7F3D1AD307E700C79C8B /* RegistrationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,25 +341,6 @@
 			targetProxy = B54B7F1D1AD2ED6300C79C8B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		B54B7F101AD2ED6300C79C8B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B54B7F111AD2ED6300C79C8B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B54B7F151AD2ED6300C79C8B /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B54B7F161AD2ED6300C79C8B /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B54B7F241AD2ED6300C79C8B /* Debug */ = {
@@ -409,6 +426,9 @@
 			baseConfigurationReference = BB2EF2DDD8E561B8FC34143D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = Mobigear/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -420,6 +440,9 @@
 			baseConfigurationReference = 273C623BACECD185E176CB58 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = Mobigear/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
