@@ -6,9 +6,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegistrationViewController">
             <connections>
-                <outlet property="buttonAuthorization" destination="dnz-B1-qdK" id="P1M-uo-vcO"/>
-                <outlet property="textFieldEmail" destination="aNU-Cx-7sh" id="uOd-Xx-Vvv"/>
-                <outlet property="textFieldPassword" destination="6th-pZ-7LM" id="2rc-da-gC1"/>
+                <outlet property="buttonRegistration" destination="dnz-B1-qdK" id="kDD-pY-YlS"/>
+                <outlet property="textFieldEmail" destination="6th-pZ-7LM" id="eW0-9f-env"/>
+                <outlet property="textFieldFio" destination="aNU-Cx-7sh" id="nkY-cp-3eh"/>
+                <outlet property="textFieldPassword" destination="238-1C-5P7" id="za8-2g-8Tw"/>
+                <outlet property="textFieldPhone" destination="Wna-eS-vEC" id="1Do-C7-w6X"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,45 +19,72 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Введите e-mail" adjustsFontSizeToFit="NO" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="aNU-Cx-7sh">
-                    <rect key="frame" x="61" y="149" width="198" height="44"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Введите ФИО" adjustsFontSizeToFit="NO" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="aNU-Cx-7sh">
+                    <rect key="frame" x="20" y="94" width="280" height="44"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="198" id="UIY-9Z-xlp"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="XYY-uT-SCQ"/>
                         <constraint firstAttribute="height" constant="44" id="rqH-KR-j3f"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Введите пароль" adjustsFontSizeToFit="NO" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="6th-pZ-7LM">
-                    <rect key="frame" x="61" y="213" width="198" height="44"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Введите e-mail" adjustsFontSizeToFit="NO" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="6th-pZ-7LM">
+                    <rect key="frame" x="20" y="158" width="280" height="44"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="198" id="0Gf-K5-m6a"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="2iy-IA-5CD"/>
                         <constraint firstAttribute="height" constant="44" id="mKr-Za-QqL"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Введите телефон" adjustsFontSizeToFit="NO" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Wna-eS-vEC">
+                    <rect key="frame" x="20" y="222" width="280" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="oJg-tX-Nya"/>
+                        <constraint firstAttribute="height" constant="44" id="s78-7r-Owg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Введите пароль" adjustsFontSizeToFit="NO" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="238-1C-5P7">
+                    <rect key="frame" x="20" y="286" width="280" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="ZaA-Yz-cQ1"/>
+                        <constraint firstAttribute="height" constant="44" id="owJ-wD-Wct"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnz-B1-qdK">
-                    <rect key="frame" x="63" y="277" width="195" height="44"/>
+                    <rect key="frame" x="63" y="350" width="195" height="44"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <inset key="contentEdgeInsets" minX="40" minY="10" maxX="40" maxY="10"/>
                     <state key="normal" title="Регистрация">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="authorization" destination="-1" eventType="touchUpInside" id="U2t-bb-kPG"/>
+                        <action selector="registration" destination="-1" eventType="touchUpInside" id="FCT-ZU-uDZ"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="dnz-B1-qdK" firstAttribute="top" secondItem="6th-pZ-7LM" secondAttribute="bottom" constant="20" id="3Vs-Nq-igu"/>
-                <constraint firstAttribute="centerX" secondItem="6th-pZ-7LM" secondAttribute="centerX" id="9ZE-IM-LGU"/>
-                <constraint firstAttribute="centerX" secondItem="aNU-Cx-7sh" secondAttribute="centerX" id="9g2-TU-ypN"/>
+                <constraint firstAttribute="trailing" secondItem="Wna-eS-vEC" secondAttribute="trailing" constant="20" id="1B9-BP-YpK"/>
                 <constraint firstAttribute="centerX" secondItem="dnz-B1-qdK" secondAttribute="centerX" id="BEc-8W-04E"/>
+                <constraint firstItem="Wna-eS-vEC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="DNF-tA-JW9"/>
+                <constraint firstItem="Wna-eS-vEC" firstAttribute="top" secondItem="6th-pZ-7LM" secondAttribute="bottom" constant="20" id="HPe-Qi-ADz"/>
+                <constraint firstItem="aNU-Cx-7sh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="J2R-Gg-iyl"/>
+                <constraint firstItem="238-1C-5P7" firstAttribute="top" secondItem="Wna-eS-vEC" secondAttribute="bottom" constant="20" id="Ps8-VS-VkX"/>
+                <constraint firstAttribute="trailing" secondItem="6th-pZ-7LM" secondAttribute="trailing" constant="20" id="Wur-E5-8Xs"/>
+                <constraint firstItem="6th-pZ-7LM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="aK5-NV-sNd"/>
+                <constraint firstItem="238-1C-5P7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="fzc-tG-7xh"/>
                 <constraint firstItem="6th-pZ-7LM" firstAttribute="top" secondItem="aNU-Cx-7sh" secondAttribute="bottom" constant="20" id="mVl-kT-WFl"/>
-                <constraint firstItem="aNU-Cx-7sh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="149" id="nzb-bh-WHa"/>
+                <constraint firstAttribute="trailing" secondItem="aNU-Cx-7sh" secondAttribute="trailing" constant="20" id="meJ-QA-dtX"/>
+                <constraint firstItem="aNU-Cx-7sh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="94" id="nzb-bh-WHa"/>
+                <constraint firstItem="dnz-B1-qdK" firstAttribute="top" secondItem="238-1C-5P7" secondAttribute="bottom" constant="20" id="qfB-mm-9ld"/>
+                <constraint firstAttribute="trailing" secondItem="238-1C-5P7" secondAttribute="trailing" constant="20" id="vFn-V4-z25"/>
             </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <point key="canvasLocation" x="403" y="407"/>
         </view>
     </objects>

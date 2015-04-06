@@ -10,6 +10,7 @@
 #import "RegistrationViewController.h"
 #import "AuthorizationModel.h"
 #import <SVProgressHUD/SVProgressHUD.h>
+#import "ArticlesViewController.h"
 
 @interface MainViewController ()<AuthorizationModelDelegate>
 
@@ -35,6 +36,10 @@
     self.buttonAuthorization.layer.borderWidth = self.buttonRegistration.layer.borderWidth = 1.f;
     self.buttonAuthorization.layer.cornerRadius = self.buttonRegistration.layer.cornerRadius = 4.f;
     self.buttonAuthorization.layer.borderColor = self.buttonRegistration.layer.borderColor = [UIColor colorWithRed:0 green:122.f/255.f blue:1.f alpha:1.f].CGColor;
+    
+    if ([[NSUserDefaults standardUserDefaults] valueForKey:@"token"]) {
+        [self.navigationController setViewControllers:@[[ArticlesViewController new]]];
+    }
 }
 
 
@@ -77,6 +82,13 @@
 }
 
 
+- (void)userNoFound {
+
+    [SVProgressHUD showErrorWithStatus:@"Пользователя с таким e-mail не существует. Зарегистрируйтесь, пожалуйста"];
+}
+
+
+#pragma mark -
 - (void)didReceiveMemoryWarning {
     
     [super didReceiveMemoryWarning];

@@ -21,6 +21,11 @@
 		B54B7F501AD3150100C79C8B /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = B54B7F4B1AD3150100C79C8B /* Article.m */; };
 		B54B7F511AD3150100C79C8B /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = B54B7F4D1AD3150100C79C8B /* Event.m */; };
 		B54B7F521AD3150100C79C8B /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = B54B7F4F1AD3150100C79C8B /* User.m */; };
+		B54B7F551AD3193F00C79C8B /* RegistrationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B54B7F541AD3193F00C79C8B /* RegistrationModel.m */; };
+		B57DB2131AD3256F00D24ADD /* ArticlesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57DB2111AD3256F00D24ADD /* ArticlesViewController.m */; };
+		B57DB2141AD3256F00D24ADD /* ArticlesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B57DB2121AD3256F00D24ADD /* ArticlesViewController.xib */; };
+		B57DB2181AD3279800D24ADD /* ArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B57DB2161AD3279800D24ADD /* ArticleCell.m */; };
+		B57DB2191AD3279800D24ADD /* ArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B57DB2171AD3279800D24ADD /* ArticleCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,14 @@
 		B54B7F4D1AD3150100C79C8B /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 		B54B7F4E1AD3150100C79C8B /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		B54B7F4F1AD3150100C79C8B /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		B54B7F531AD3193F00C79C8B /* RegistrationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationModel.h; sourceTree = "<group>"; };
+		B54B7F541AD3193F00C79C8B /* RegistrationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationModel.m; sourceTree = "<group>"; };
+		B57DB2101AD3256F00D24ADD /* ArticlesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticlesViewController.h; sourceTree = "<group>"; };
+		B57DB2111AD3256F00D24ADD /* ArticlesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticlesViewController.m; sourceTree = "<group>"; };
+		B57DB2121AD3256F00D24ADD /* ArticlesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticlesViewController.xib; sourceTree = "<group>"; };
+		B57DB2151AD3279800D24ADD /* ArticleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleCell.h; sourceTree = "<group>"; };
+		B57DB2161AD3279800D24ADD /* ArticleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleCell.m; sourceTree = "<group>"; };
+		B57DB2171AD3279800D24ADD /* ArticleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleCell.xib; sourceTree = "<group>"; };
 		BB2EF2DDD8E561B8FC34143D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E473505EB907C25B0760FD2C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -165,6 +178,9 @@
 			isa = PBXGroup;
 			children = (
 				B54B7F2D1AD2F7EA00C79C8B /* Window.xib */,
+				B57DB2151AD3279800D24ADD /* ArticleCell.h */,
+				B57DB2161AD3279800D24ADD /* ArticleCell.m */,
+				B57DB2171AD3279800D24ADD /* ArticleCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,6 +193,9 @@
 				B54B7F3A1AD307E700C79C8B /* RegistrationViewController.h */,
 				B54B7F3B1AD307E700C79C8B /* RegistrationViewController.m */,
 				B54B7F3C1AD307E700C79C8B /* RegistrationViewController.xib */,
+				B57DB2101AD3256F00D24ADD /* ArticlesViewController.h */,
+				B57DB2111AD3256F00D24ADD /* ArticlesViewController.m */,
+				B57DB2121AD3256F00D24ADD /* ArticlesViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -186,6 +205,8 @@
 			children = (
 				B54B7F401AD30EBE00C79C8B /* AuthorizationModel.h */,
 				B54B7F411AD30EBE00C79C8B /* AuthorizationModel.m */,
+				B54B7F531AD3193F00C79C8B /* RegistrationModel.h */,
+				B54B7F541AD3193F00C79C8B /* RegistrationModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -286,7 +307,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B54B7F141AD2ED6300C79C8B /* Images.xcassets in Resources */,
+				B57DB2141AD3256F00D24ADD /* ArticlesViewController.xib in Resources */,
 				B54B7F2E1AD2F7EA00C79C8B /* Window.xib in Resources */,
+				B57DB2191AD3279800D24ADD /* ArticleCell.xib in Resources */,
 				B54B7F3E1AD307E700C79C8B /* RegistrationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,12 +361,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B54B7F551AD3193F00C79C8B /* RegistrationModel.m in Sources */,
 				B54B7F091AD2ED6300C79C8B /* AppDelegate.m in Sources */,
 				B54B7F421AD30EBE00C79C8B /* AuthorizationModel.m in Sources */,
+				B57DB2131AD3256F00D24ADD /* ArticlesViewController.m in Sources */,
 				B54B7F521AD3150100C79C8B /* User.m in Sources */,
 				B54B7F501AD3150100C79C8B /* Article.m in Sources */,
 				B54B7F061AD2ED6300C79C8B /* main.m in Sources */,
 				B54B7F511AD3150100C79C8B /* Event.m in Sources */,
+				B57DB2181AD3279800D24ADD /* ArticleCell.m in Sources */,
 				B54B7F0C1AD2ED6300C79C8B /* Mobigear.xcdatamodeld in Sources */,
 				B54B7F341AD2FA2E00C79C8B /* MainViewController.m in Sources */,
 				B54B7F3D1AD307E700C79C8B /* RegistrationViewController.m in Sources */,

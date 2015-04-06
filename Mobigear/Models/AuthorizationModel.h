@@ -12,6 +12,7 @@
 
 - (void)authorizationDidComplete;
 - (void)authorizationDidFail;
+- (void)userNoFound;
 
 @end
 
