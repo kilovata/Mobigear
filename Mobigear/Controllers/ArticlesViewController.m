@@ -8,6 +8,7 @@
 
 #import "ArticlesViewController.h"
 #import "ArticleCell.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface ArticlesViewController ()
 
@@ -19,7 +20,11 @@
     
     [super viewDidLoad];
     
-     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Профиль" style:UIBarButtonItemStylePlain target:self action:@selector(showProfile)];
+    self.title = @"Статьи";
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"user"]
+                                                                               style:UIBarButtonItemStylePlain
+                                                                              target:self
+                                                                              action:@selector(showProfile)];
     
     [self.tableView registerNib:[UINib nibWithNibName:@"ArticleCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"ArticleCell"];
 }
@@ -46,7 +51,13 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     ArticleCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ArticleCell"];
-    cell.labelTitle.text = [NSString stringWithFormat:@"Title %li", indexPath.row];
+    cell.labelTitle.text = [NSString stringWithFormat:@"Статья номер %li", indexPath.row + 1];
+    [cell.imgViewPicture sd_setImageWithURL:[NSURL URLWithString:@"https://dl.dropboxusercontent.com/u/4926446/pic%402x.png"] placeholderImage:[UIImage imageNamed:@"picLoading"] options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+        
+    } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        
+    }];
+    
     return cell;
 }
 
@@ -55,6 +66,13 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     return 61.f;
+}
+
+
+- (void)tableView:(UITableView *)tableView didEndDisplayingCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath*)indexPath {
+    
+    ArticleCell *articleCell = (ArticleCell*)[tableView cellForRowAtIndexPath:indexPath];
+    [articleCell.imgViewPicture sd_cancelCurrentImageLoad];
 }
 
 
