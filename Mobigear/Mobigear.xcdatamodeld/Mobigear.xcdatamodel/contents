@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="14D130a" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Article" syncable="YES">
+    <entity name="Article" representedClassName="Article" syncable="YES">
         <attribute name="body" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="idUnique" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="Event" parentEntity="Article" syncable="YES">
+    <entity name="Event" representedClassName="Event" parentEntity="Article" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
     </entity>
-    <entity name="User" syncable="YES">
+    <entity name="User" representedClassName="User" syncable="YES">
         <attribute name="avatar" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="fio" optional="YES" attributeType="String" syncable="YES"/>
@@ -17,7 +17,7 @@
     </entity>
     <elements>
         <element name="User" positionX="-63" positionY="-18" width="128" height="103"/>
-        <element name="Article" positionX="-54" positionY="18" width="128" height="105"/>
+        <element name="Article" positionX="-54" positionY="18" width="128" height="103"/>
         <element name="Event" positionX="-36" positionY="45" width="128" height="58"/>
     </elements>
 </model>

@@ -18,6 +18,9 @@
 		B54B7F3D1AD307E700C79C8B /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B54B7F3B1AD307E700C79C8B /* RegistrationViewController.m */; };
 		B54B7F3E1AD307E700C79C8B /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B54B7F3C1AD307E700C79C8B /* RegistrationViewController.xib */; };
 		B54B7F421AD30EBE00C79C8B /* AuthorizationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B54B7F411AD30EBE00C79C8B /* AuthorizationModel.m */; };
+		B54B7F501AD3150100C79C8B /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = B54B7F4B1AD3150100C79C8B /* Article.m */; };
+		B54B7F511AD3150100C79C8B /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = B54B7F4D1AD3150100C79C8B /* Event.m */; };
+		B54B7F521AD3150100C79C8B /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = B54B7F4F1AD3150100C79C8B /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,12 @@
 		B54B7F3C1AD307E700C79C8B /* RegistrationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
 		B54B7F401AD30EBE00C79C8B /* AuthorizationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizationModel.h; sourceTree = "<group>"; };
 		B54B7F411AD30EBE00C79C8B /* AuthorizationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizationModel.m; sourceTree = "<group>"; };
+		B54B7F4A1AD3150100C79C8B /* Article.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Article.h; sourceTree = "<group>"; };
+		B54B7F4B1AD3150100C79C8B /* Article.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Article.m; sourceTree = "<group>"; };
+		B54B7F4C1AD3150100C79C8B /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		B54B7F4D1AD3150100C79C8B /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		B54B7F4E1AD3150100C79C8B /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		B54B7F4F1AD3150100C79C8B /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		BB2EF2DDD8E561B8FC34143D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E473505EB907C25B0760FD2C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -113,12 +122,13 @@
 		B54B7F021AD2ED6300C79C8B /* Mobigear */ = {
 			isa = PBXGroup;
 			children = (
-				B54B7F3F1AD30EAD00C79C8B /* Models */,
 				B54B7F071AD2ED6300C79C8B /* AppDelegate.h */,
 				B54B7F081AD2ED6300C79C8B /* AppDelegate.m */,
 				B54B7F301AD2FA1D00C79C8B /* Controllers */,
+				B54B7F3F1AD30EAD00C79C8B /* Models */,
 				B54B7F2C1AD2F7E200C79C8B /* Views */,
 				B54B7F131AD2ED6300C79C8B /* Images.xcassets */,
+				B54B7F431AD314E600C79C8B /* CoreData */,
 				B54B7F0A1AD2ED6300C79C8B /* Mobigear.xcdatamodeld */,
 				B54B7F031AD2ED6300C79C8B /* Supporting Files */,
 			);
@@ -178,6 +188,19 @@
 				B54B7F411AD30EBE00C79C8B /* AuthorizationModel.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		B54B7F431AD314E600C79C8B /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				B54B7F4A1AD3150100C79C8B /* Article.h */,
+				B54B7F4B1AD3150100C79C8B /* Article.m */,
+				B54B7F4C1AD3150100C79C8B /* Event.h */,
+				B54B7F4D1AD3150100C79C8B /* Event.m */,
+				B54B7F4E1AD3150100C79C8B /* User.h */,
+				B54B7F4F1AD3150100C79C8B /* User.m */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,7 +340,10 @@
 			files = (
 				B54B7F091AD2ED6300C79C8B /* AppDelegate.m in Sources */,
 				B54B7F421AD30EBE00C79C8B /* AuthorizationModel.m in Sources */,
+				B54B7F521AD3150100C79C8B /* User.m in Sources */,
+				B54B7F501AD3150100C79C8B /* Article.m in Sources */,
 				B54B7F061AD2ED6300C79C8B /* main.m in Sources */,
+				B54B7F511AD3150100C79C8B /* Event.m in Sources */,
 				B54B7F0C1AD2ED6300C79C8B /* Mobigear.xcdatamodeld in Sources */,
 				B54B7F341AD2FA2E00C79C8B /* MainViewController.m in Sources */,
 				B54B7F3D1AD307E700C79C8B /* RegistrationViewController.m in Sources */,
