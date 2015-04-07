@@ -13,6 +13,7 @@
 
 @interface RegistrationViewController ()<RegistrationModelDelegate>
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintTestFieldFioTop;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldFio;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldEmail;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldPhone;
@@ -48,10 +49,48 @@
     
     if (self.textFieldFio.text.length > 0 && self.textFieldEmail.text.length > 0 &&
         self.textFieldPhone.text.length > 0 && self.textFieldPassword.text.length > 0) {
+        [self.textFieldPassword resignFirstResponder];
         [self.registrationModel registrationWithFio:self.textFieldFio.text andEmail:self.textFieldEmail.text andPhone:self.textFieldPhone.text andPassword:self.textFieldPassword.text];
     } else {
         [SVProgressHUD showErrorWithStatus:@"Заполните все поля"];
     }
+}
+
+
+#pragma mark - UITextFieldDelegate
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    
+    if (textField == self.textFieldPassword) {
+        [self animationWithConstant:0];
+    }
+}
+
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    
+    [self animationWithConstant:94.f];
+}
+
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    
+    for (UITextField *curTextField in self.view.subviews) {
+        [curTextField resignFirstResponder];
+    }
+    return YES;
+}
+
+
+#pragma mark -
+- (void)animationWithConstant:(CGFloat)value {
+    
+    [self.textFieldFio.constraints enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        self.constraintTestFieldFioTop.constant = value;
+    }];
+    
+    [UIView animateWithDuration:0.3f animations:^{
+        [self.view layoutIfNeeded];
+    }];
 }
 
 
