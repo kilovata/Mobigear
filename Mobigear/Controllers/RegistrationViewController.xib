@@ -69,7 +69,7 @@
                     </connections>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnz-B1-qdK">
-                    <rect key="frame" x="63" y="350" width="195" height="44"/>
+                    <rect key="frame" x="63" y="355" width="195" height="44"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <inset key="contentEdgeInsets" minX="40" minY="10" maxX="40" maxY="10"/>
                     <state key="normal" title="Регистрация">
@@ -94,7 +94,7 @@
                 <constraint firstItem="6th-pZ-7LM" firstAttribute="top" secondItem="aNU-Cx-7sh" secondAttribute="bottom" constant="20" id="mVl-kT-WFl"/>
                 <constraint firstAttribute="trailing" secondItem="aNU-Cx-7sh" secondAttribute="trailing" constant="20" id="meJ-QA-dtX"/>
                 <constraint firstItem="aNU-Cx-7sh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="94" id="nzb-bh-WHa"/>
-                <constraint firstItem="dnz-B1-qdK" firstAttribute="top" secondItem="238-1C-5P7" secondAttribute="bottom" constant="20" id="qfB-mm-9ld"/>
+                <constraint firstItem="dnz-B1-qdK" firstAttribute="top" secondItem="238-1C-5P7" secondAttribute="bottom" constant="25" id="qfB-mm-9ld"/>
                 <constraint firstAttribute="trailing" secondItem="238-1C-5P7" secondAttribute="trailing" constant="20" id="vFn-V4-z25"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>

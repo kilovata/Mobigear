@@ -47,9 +47,15 @@
 - (void)saveToCoreDataParameters:(NSDictionary*)parameters {
     
     User *user = [User MR_createEntity];
-    user.fio = [parameters objectForKey:@"fio"];
-    user.email = [parameters objectForKey:@"email"];
-    user.phone = [parameters objectForKey:@"phone"];
+    if (![[parameters objectForKey:@"fio"] isEqual:[NSNull null]]) {
+        user.fio = [parameters objectForKey:@"fio"];
+    }
+    if (![[parameters objectForKey:@"email"] isEqual:[NSNull null]]) {
+        user.email = [parameters objectForKey:@"email"];
+    }
+    if (![[parameters objectForKey:@"phone"] isEqual:[NSNull null]]) {
+        user.phone = [parameters objectForKey:@"phone"];
+    }
     [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
 }
 
