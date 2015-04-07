@@ -52,11 +52,7 @@
     
     ArticleCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ArticleCell"];
     cell.labelTitle.text = [NSString stringWithFormat:@"Статья номер %li", indexPath.row + 1];
-    [cell.imgViewPicture sd_setImageWithURL:[NSURL URLWithString:@"https://dl.dropboxusercontent.com/u/4926446/pic%402x.png"] placeholderImage:[UIImage imageNamed:@"picLoading"] options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize) {
-        
-    } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-        
-    }];
+    [cell.imgViewPicture sd_setImageWithURL:[NSURL URLWithString:@"https://dl.dropboxusercontent.com/u/4926446/pic%402x.png"] placeholderImage:[UIImage imageNamed:@"picLoading"] options:SDWebImageRefreshCached];
     
     return cell;
 }
