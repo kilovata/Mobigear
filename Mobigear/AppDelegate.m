@@ -18,8 +18,8 @@
     
     [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"Mobigear.sqlite"];
     
-    TestModel *testModel = [TestModel new];
-    [testModel initEntities];
+//    TestModel *testModel = [TestModel new];
+//    [testModel initEntities];
     
     return YES;
 }

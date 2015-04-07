@@ -167,8 +167,8 @@
 				B54B7F301AD2FA1D00C79C8B /* Controllers */,
 				B54B7F3F1AD30EAD00C79C8B /* Models */,
 				B54B7F2C1AD2F7E200C79C8B /* Views */,
-				B54B7F131AD2ED6300C79C8B /* Images.xcassets */,
 				B54B7F431AD314E600C79C8B /* CoreData */,
+				B54B7F131AD2ED6300C79C8B /* Images.xcassets */,
 				B54B7F0A1AD2ED6300C79C8B /* Mobigear.xcdatamodeld */,
 				B54B7F031AD2ED6300C79C8B /* Supporting Files */,
 			);
