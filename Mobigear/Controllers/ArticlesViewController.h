@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ArticlesViewController : UITableViewController
+@interface ArticlesViewController : UIViewController
 
 @end

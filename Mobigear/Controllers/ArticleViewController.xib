@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArticleViewController">
+            <connections>
+                <outlet property="imgViewPicture" destination="Wuz-Bd-SgK" id="0cG-Ez-JJY"/>
+                <outlet property="labelDate" destination="3kd-L4-cNT" id="zTL-3I-ZcI"/>
+                <outlet property="labelTitle" destination="1BJ-Xf-EO4" id="3OC-xY-keU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="web" destination="yjh-Zx-OyE" id="ZNB-qI-Owi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum Lorem ipsum Lorem ipsum" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1BJ-Xf-EO4">
+                    <rect key="frame" x="25" y="84" width="195" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Qyg-a2-4iX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wuz-Bd-SgK">
+                    <rect key="frame" x="245" y="84" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="p2C-s3-8wu"/>
+                        <constraint firstAttribute="width" constant="50" id="rx7-PA-BkO"/>
+                    </constraints>
+                </imageView>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yjh-Zx-OyE">
+                    <rect key="frame" x="0.0" y="159" width="320" height="409"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="kyU-ft-1qB"/>
+                    </connections>
+                </webView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kd-L4-cNT">
+                    <rect key="frame" x="25" y="138" width="29" height="15"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1BJ-Xf-EO4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="1K3-96-GKp"/>
+                <constraint firstItem="yjh-Zx-OyE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6ba-hh-EYF"/>
+                <constraint firstItem="1BJ-Xf-EO4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="DAF-sA-9RS"/>
+                <constraint firstItem="Wuz-Bd-SgK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="Dac-vd-2WI"/>
+                <constraint firstItem="3kd-L4-cNT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="LHB-3z-QIc"/>
+                <constraint firstItem="3kd-L4-cNT" firstAttribute="top" secondItem="1BJ-Xf-EO4" secondAttribute="bottom" constant="4" id="NOm-W6-b2d"/>
+                <constraint firstAttribute="trailing" secondItem="yjh-Zx-OyE" secondAttribute="trailing" id="NtA-1Z-IP1"/>
+                <constraint firstAttribute="bottom" secondItem="yjh-Zx-OyE" secondAttribute="bottom" id="Pfd-Ti-R8K"/>
+                <constraint firstItem="Wuz-Bd-SgK" firstAttribute="leading" secondItem="1BJ-Xf-EO4" secondAttribute="trailing" constant="25" id="k18-bs-q5h"/>
+                <constraint firstItem="yjh-Zx-OyE" firstAttribute="top" secondItem="Wuz-Bd-SgK" secondAttribute="bottom" constant="25" id="lRU-7u-QbA"/>
+                <constraint firstAttribute="trailing" secondItem="Wuz-Bd-SgK" secondAttribute="trailing" constant="25" id="nJk-rc-ZFO"/>
+            </constraints>
+            <point key="canvasLocation" x="386" y="123"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
