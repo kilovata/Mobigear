@@ -13,6 +13,13 @@
 		B501FA1B1AD3B69F00F5C8AB /* ProfileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B501FA1A1AD3B69F00F5C8AB /* ProfileModel.m */; };
 		B501FA221AD3E27400F5C8AB /* ArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B501FA201AD3E27400F5C8AB /* ArticleViewController.m */; };
 		B501FA231AD3E27400F5C8AB /* ArticleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B501FA211AD3E27400F5C8AB /* ArticleViewController.xib */; };
+		B501FA261AD3F26100F5C8AB /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B501FA251AD3F26100F5C8AB /* DataSource.m */; };
+		B501FA291AD3F36F00F5C8AB /* ArticleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B501FA281AD3F36F00F5C8AB /* ArticleModel.m */; };
+		B501FA2C1AD3F56900F5C8AB /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B501FA2B1AD3F56900F5C8AB /* TestModel.m */; };
+		B501FA2E1AD3FCAD00F5C8AB /* ArticlesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B501FA2D1AD3FCAD00F5C8AB /* ArticlesViewController.xib */; };
+		B501FA311AD4007100F5C8AB /* EventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B501FA301AD4007100F5C8AB /* EventCell.m */; };
+		B501FA331AD4008000F5C8AB /* EventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B501FA321AD4008000F5C8AB /* EventCell.xib */; };
+		B501FA361AD4137B00F5C8AB /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = B501FA351AD4137B00F5C8AB /* Event.m */; };
 		B54B7F061AD2ED6300C79C8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B54B7F051AD2ED6300C79C8B /* main.m */; };
 		B54B7F091AD2ED6300C79C8B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B54B7F081AD2ED6300C79C8B /* AppDelegate.m */; };
 		B54B7F0C1AD2ED6300C79C8B /* Mobigear.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B54B7F0A1AD2ED6300C79C8B /* Mobigear.xcdatamodeld */; };
@@ -24,11 +31,9 @@
 		B54B7F3E1AD307E700C79C8B /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B54B7F3C1AD307E700C79C8B /* RegistrationViewController.xib */; };
 		B54B7F421AD30EBE00C79C8B /* AuthorizationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B54B7F411AD30EBE00C79C8B /* AuthorizationModel.m */; };
 		B54B7F501AD3150100C79C8B /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = B54B7F4B1AD3150100C79C8B /* Article.m */; };
-		B54B7F511AD3150100C79C8B /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = B54B7F4D1AD3150100C79C8B /* Event.m */; };
 		B54B7F521AD3150100C79C8B /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = B54B7F4F1AD3150100C79C8B /* User.m */; };
 		B54B7F551AD3193F00C79C8B /* RegistrationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B54B7F541AD3193F00C79C8B /* RegistrationModel.m */; };
 		B57DB2131AD3256F00D24ADD /* ArticlesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57DB2111AD3256F00D24ADD /* ArticlesViewController.m */; };
-		B57DB2141AD3256F00D24ADD /* ArticlesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B57DB2121AD3256F00D24ADD /* ArticlesViewController.xib */; };
 		B57DB2181AD3279800D24ADD /* ArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B57DB2161AD3279800D24ADD /* ArticleCell.m */; };
 		B57DB2191AD3279800D24ADD /* ArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B57DB2171AD3279800D24ADD /* ArticleCell.xib */; };
 /* End PBXBuildFile section */
@@ -53,6 +58,18 @@
 		B501FA1F1AD3E27400F5C8AB /* ArticleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleViewController.h; sourceTree = "<group>"; };
 		B501FA201AD3E27400F5C8AB /* ArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleViewController.m; sourceTree = "<group>"; };
 		B501FA211AD3E27400F5C8AB /* ArticleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleViewController.xib; sourceTree = "<group>"; };
+		B501FA241AD3F26100F5C8AB /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
+		B501FA251AD3F26100F5C8AB /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
+		B501FA271AD3F36F00F5C8AB /* ArticleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleModel.h; sourceTree = "<group>"; };
+		B501FA281AD3F36F00F5C8AB /* ArticleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleModel.m; sourceTree = "<group>"; };
+		B501FA2A1AD3F56900F5C8AB /* TestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
+		B501FA2B1AD3F56900F5C8AB /* TestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
+		B501FA2D1AD3FCAD00F5C8AB /* ArticlesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticlesViewController.xib; sourceTree = "<group>"; };
+		B501FA2F1AD4007100F5C8AB /* EventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventCell.h; sourceTree = "<group>"; };
+		B501FA301AD4007100F5C8AB /* EventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventCell.m; sourceTree = "<group>"; };
+		B501FA321AD4008000F5C8AB /* EventCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventCell.xib; sourceTree = "<group>"; };
+		B501FA341AD4137B00F5C8AB /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		B501FA351AD4137B00F5C8AB /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 		B54B7F001AD2ED6300C79C8B /* Mobigear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mobigear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54B7F041AD2ED6300C79C8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B54B7F051AD2ED6300C79C8B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -73,15 +90,12 @@
 		B54B7F411AD30EBE00C79C8B /* AuthorizationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizationModel.m; sourceTree = "<group>"; };
 		B54B7F4A1AD3150100C79C8B /* Article.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Article.h; sourceTree = "<group>"; };
 		B54B7F4B1AD3150100C79C8B /* Article.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Article.m; sourceTree = "<group>"; };
-		B54B7F4C1AD3150100C79C8B /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
-		B54B7F4D1AD3150100C79C8B /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 		B54B7F4E1AD3150100C79C8B /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		B54B7F4F1AD3150100C79C8B /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		B54B7F531AD3193F00C79C8B /* RegistrationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationModel.h; sourceTree = "<group>"; };
 		B54B7F541AD3193F00C79C8B /* RegistrationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationModel.m; sourceTree = "<group>"; };
 		B57DB2101AD3256F00D24ADD /* ArticlesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticlesViewController.h; sourceTree = "<group>"; };
 		B57DB2111AD3256F00D24ADD /* ArticlesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticlesViewController.m; sourceTree = "<group>"; };
-		B57DB2121AD3256F00D24ADD /* ArticlesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticlesViewController.xib; sourceTree = "<group>"; };
 		B57DB2151AD3279800D24ADD /* ArticleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleCell.h; sourceTree = "<group>"; };
 		B57DB2161AD3279800D24ADD /* ArticleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleCell.m; sourceTree = "<group>"; };
 		B57DB2171AD3279800D24ADD /* ArticleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleCell.xib; sourceTree = "<group>"; };
@@ -194,6 +208,9 @@
 				B57DB2151AD3279800D24ADD /* ArticleCell.h */,
 				B57DB2161AD3279800D24ADD /* ArticleCell.m */,
 				B57DB2171AD3279800D24ADD /* ArticleCell.xib */,
+				B501FA2F1AD4007100F5C8AB /* EventCell.h */,
+				B501FA301AD4007100F5C8AB /* EventCell.m */,
+				B501FA321AD4008000F5C8AB /* EventCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -206,12 +223,12 @@
 				B54B7F3A1AD307E700C79C8B /* RegistrationViewController.h */,
 				B54B7F3B1AD307E700C79C8B /* RegistrationViewController.m */,
 				B54B7F3C1AD307E700C79C8B /* RegistrationViewController.xib */,
-				B57DB2101AD3256F00D24ADD /* ArticlesViewController.h */,
-				B57DB2111AD3256F00D24ADD /* ArticlesViewController.m */,
-				B57DB2121AD3256F00D24ADD /* ArticlesViewController.xib */,
 				B501FA141AD3B26200F5C8AB /* ProfileViewController.h */,
 				B501FA151AD3B26200F5C8AB /* ProfileViewController.m */,
 				B501FA161AD3B26200F5C8AB /* ProfileViewController.xib */,
+				B57DB2101AD3256F00D24ADD /* ArticlesViewController.h */,
+				B57DB2111AD3256F00D24ADD /* ArticlesViewController.m */,
+				B501FA2D1AD3FCAD00F5C8AB /* ArticlesViewController.xib */,
 				B501FA1F1AD3E27400F5C8AB /* ArticleViewController.h */,
 				B501FA201AD3E27400F5C8AB /* ArticleViewController.m */,
 				B501FA211AD3E27400F5C8AB /* ArticleViewController.xib */,
@@ -228,6 +245,12 @@
 				B54B7F541AD3193F00C79C8B /* RegistrationModel.m */,
 				B501FA191AD3B69F00F5C8AB /* ProfileModel.h */,
 				B501FA1A1AD3B69F00F5C8AB /* ProfileModel.m */,
+				B501FA241AD3F26100F5C8AB /* DataSource.h */,
+				B501FA251AD3F26100F5C8AB /* DataSource.m */,
+				B501FA271AD3F36F00F5C8AB /* ArticleModel.h */,
+				B501FA281AD3F36F00F5C8AB /* ArticleModel.m */,
+				B501FA2A1AD3F56900F5C8AB /* TestModel.h */,
+				B501FA2B1AD3F56900F5C8AB /* TestModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -237,8 +260,8 @@
 			children = (
 				B54B7F4A1AD3150100C79C8B /* Article.h */,
 				B54B7F4B1AD3150100C79C8B /* Article.m */,
-				B54B7F4C1AD3150100C79C8B /* Event.h */,
-				B54B7F4D1AD3150100C79C8B /* Event.m */,
+				B501FA341AD4137B00F5C8AB /* Event.h */,
+				B501FA351AD4137B00F5C8AB /* Event.m */,
 				B54B7F4E1AD3150100C79C8B /* User.h */,
 				B54B7F4F1AD3150100C79C8B /* User.m */,
 			);
@@ -327,13 +350,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B501FA331AD4008000F5C8AB /* EventCell.xib in Resources */,
 				B501FA181AD3B26200F5C8AB /* ProfileViewController.xib in Resources */,
 				B54B7F141AD2ED6300C79C8B /* Images.xcassets in Resources */,
 				B501FA231AD3E27400F5C8AB /* ArticleViewController.xib in Resources */,
-				B57DB2141AD3256F00D24ADD /* ArticlesViewController.xib in Resources */,
 				B54B7F2E1AD2F7EA00C79C8B /* Window.xib in Resources */,
 				B57DB2191AD3279800D24ADD /* ArticleCell.xib in Resources */,
 				B54B7F3E1AD307E700C79C8B /* RegistrationViewController.xib in Resources */,
+				B501FA2E1AD3FCAD00F5C8AB /* ArticlesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,17 +410,21 @@
 			files = (
 				B54B7F551AD3193F00C79C8B /* RegistrationModel.m in Sources */,
 				B54B7F091AD2ED6300C79C8B /* AppDelegate.m in Sources */,
+				B501FA261AD3F26100F5C8AB /* DataSource.m in Sources */,
 				B54B7F421AD30EBE00C79C8B /* AuthorizationModel.m in Sources */,
 				B57DB2131AD3256F00D24ADD /* ArticlesViewController.m in Sources */,
 				B54B7F521AD3150100C79C8B /* User.m in Sources */,
+				B501FA361AD4137B00F5C8AB /* Event.m in Sources */,
 				B501FA221AD3E27400F5C8AB /* ArticleViewController.m in Sources */,
 				B54B7F501AD3150100C79C8B /* Article.m in Sources */,
 				B54B7F061AD2ED6300C79C8B /* main.m in Sources */,
 				B501FA1B1AD3B69F00F5C8AB /* ProfileModel.m in Sources */,
-				B54B7F511AD3150100C79C8B /* Event.m in Sources */,
 				B57DB2181AD3279800D24ADD /* ArticleCell.m in Sources */,
+				B501FA311AD4007100F5C8AB /* EventCell.m in Sources */,
 				B501FA171AD3B26200F5C8AB /* ProfileViewController.m in Sources */,
+				B501FA291AD3F36F00F5C8AB /* ArticleModel.m in Sources */,
 				B54B7F0C1AD2ED6300C79C8B /* Mobigear.xcdatamodeld in Sources */,
+				B501FA2C1AD3F56900F5C8AB /* TestModel.m in Sources */,
 				B54B7F341AD2FA2E00C79C8B /* MainViewController.m in Sources */,
 				B54B7F3D1AD307E700C79C8B /* RegistrationViewController.m in Sources */,
 			);

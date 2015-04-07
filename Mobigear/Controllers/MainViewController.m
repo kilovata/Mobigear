@@ -72,7 +72,7 @@
 #pragma mark - AuthorizationModelDelegate
 - (void)authorizationDidComplete {
     
-    
+    [self.navigationController setViewControllers:@[[ArticlesViewController new]]];
 }
 
 

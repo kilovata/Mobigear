@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import <CoreData+MagicalRecord.h>
 #import "MainViewController.h"
+#import "TestModel.h"
 
 @implementation AppDelegate
 
@@ -16,6 +17,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"Mobigear.sqlite"];
+    
+    TestModel *testModel = [TestModel new];
+    [testModel initEntities];
     
     return YES;
 }

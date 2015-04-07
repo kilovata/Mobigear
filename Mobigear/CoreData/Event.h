@@ -2,7 +2,7 @@
 //  Event.h
 //  Mobigear
 //
-//  Created by Sveta Kilovata on 06/04/15.
+//  Created by kilovata-iMac on 07/04/15.
 //  Copyright (c) 2015 kilovata. All rights reserved.
 //
 
@@ -14,5 +14,6 @@
 @interface Event : Article
 
 @property (nonatomic, retain) NSDate * date;
+@property (nonatomic, retain) NSNumber * go;
 
 @end
