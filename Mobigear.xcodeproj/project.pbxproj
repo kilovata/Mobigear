@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		5B3CB4D62CDDCF8E0C83BE96 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E473505EB907C25B0760FD2C /* libPods.a */; };
+		B501FA171AD3B26200F5C8AB /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B501FA151AD3B26200F5C8AB /* ProfileViewController.m */; };
+		B501FA181AD3B26200F5C8AB /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B501FA161AD3B26200F5C8AB /* ProfileViewController.xib */; };
+		B501FA1B1AD3B69F00F5C8AB /* ProfileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B501FA1A1AD3B69F00F5C8AB /* ProfileModel.m */; };
+		B501FA221AD3E27400F5C8AB /* ArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B501FA201AD3E27400F5C8AB /* ArticleViewController.m */; };
+		B501FA231AD3E27400F5C8AB /* ArticleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B501FA211AD3E27400F5C8AB /* ArticleViewController.xib */; };
 		B54B7F061AD2ED6300C79C8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B54B7F051AD2ED6300C79C8B /* main.m */; };
 		B54B7F091AD2ED6300C79C8B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B54B7F081AD2ED6300C79C8B /* AppDelegate.m */; };
 		B54B7F0C1AD2ED6300C79C8B /* Mobigear.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B54B7F0A1AD2ED6300C79C8B /* Mobigear.xcdatamodeld */; };
@@ -40,6 +45,14 @@
 
 /* Begin PBXFileReference section */
 		273C623BACECD185E176CB58 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B501FA141AD3B26200F5C8AB /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		B501FA151AD3B26200F5C8AB /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		B501FA161AD3B26200F5C8AB /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		B501FA191AD3B69F00F5C8AB /* ProfileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileModel.h; sourceTree = "<group>"; };
+		B501FA1A1AD3B69F00F5C8AB /* ProfileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileModel.m; sourceTree = "<group>"; };
+		B501FA1F1AD3E27400F5C8AB /* ArticleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleViewController.h; sourceTree = "<group>"; };
+		B501FA201AD3E27400F5C8AB /* ArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleViewController.m; sourceTree = "<group>"; };
+		B501FA211AD3E27400F5C8AB /* ArticleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleViewController.xib; sourceTree = "<group>"; };
 		B54B7F001AD2ED6300C79C8B /* Mobigear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mobigear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54B7F041AD2ED6300C79C8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B54B7F051AD2ED6300C79C8B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -196,6 +209,12 @@
 				B57DB2101AD3256F00D24ADD /* ArticlesViewController.h */,
 				B57DB2111AD3256F00D24ADD /* ArticlesViewController.m */,
 				B57DB2121AD3256F00D24ADD /* ArticlesViewController.xib */,
+				B501FA141AD3B26200F5C8AB /* ProfileViewController.h */,
+				B501FA151AD3B26200F5C8AB /* ProfileViewController.m */,
+				B501FA161AD3B26200F5C8AB /* ProfileViewController.xib */,
+				B501FA1F1AD3E27400F5C8AB /* ArticleViewController.h */,
+				B501FA201AD3E27400F5C8AB /* ArticleViewController.m */,
+				B501FA211AD3E27400F5C8AB /* ArticleViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -207,6 +226,8 @@
 				B54B7F411AD30EBE00C79C8B /* AuthorizationModel.m */,
 				B54B7F531AD3193F00C79C8B /* RegistrationModel.h */,
 				B54B7F541AD3193F00C79C8B /* RegistrationModel.m */,
+				B501FA191AD3B69F00F5C8AB /* ProfileModel.h */,
+				B501FA1A1AD3B69F00F5C8AB /* ProfileModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -306,7 +327,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B501FA181AD3B26200F5C8AB /* ProfileViewController.xib in Resources */,
 				B54B7F141AD2ED6300C79C8B /* Images.xcassets in Resources */,
+				B501FA231AD3E27400F5C8AB /* ArticleViewController.xib in Resources */,
 				B57DB2141AD3256F00D24ADD /* ArticlesViewController.xib in Resources */,
 				B54B7F2E1AD2F7EA00C79C8B /* Window.xib in Resources */,
 				B57DB2191AD3279800D24ADD /* ArticleCell.xib in Resources */,
@@ -366,10 +389,13 @@
 				B54B7F421AD30EBE00C79C8B /* AuthorizationModel.m in Sources */,
 				B57DB2131AD3256F00D24ADD /* ArticlesViewController.m in Sources */,
 				B54B7F521AD3150100C79C8B /* User.m in Sources */,
+				B501FA221AD3E27400F5C8AB /* ArticleViewController.m in Sources */,
 				B54B7F501AD3150100C79C8B /* Article.m in Sources */,
 				B54B7F061AD2ED6300C79C8B /* main.m in Sources */,
+				B501FA1B1AD3B69F00F5C8AB /* ProfileModel.m in Sources */,
 				B54B7F511AD3150100C79C8B /* Event.m in Sources */,
 				B57DB2181AD3279800D24ADD /* ArticleCell.m in Sources */,
+				B501FA171AD3B26200F5C8AB /* ProfileViewController.m in Sources */,
 				B54B7F0C1AD2ED6300C79C8B /* Mobigear.xcdatamodeld in Sources */,
 				B54B7F341AD2FA2E00C79C8B /* MainViewController.m in Sources */,
 				B54B7F3D1AD307E700C79C8B /* RegistrationViewController.m in Sources */,

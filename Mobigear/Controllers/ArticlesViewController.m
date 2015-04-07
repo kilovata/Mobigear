@@ -9,6 +9,7 @@
 #import "ArticlesViewController.h"
 #import "ArticleCell.h"
 #import <SDWebImage/UIImageView+WebCache.h>
+#import "ProfileViewController.h"
 
 @interface ArticlesViewController ()
 
@@ -32,7 +33,8 @@
 
 - (void)showProfile {
     
-    
+    ProfileViewController *profileVC = [ProfileViewController new];
+    [self.navigationController pushViewController:profileVC animated:YES];
 }
 
 
