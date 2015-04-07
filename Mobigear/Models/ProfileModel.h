@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class User;
+
 @protocol ProfileModelDelegate <NSObject>
 
 - (void)profileLoadFromServer;
@@ -20,11 +22,7 @@
 
 @property (weak, nonatomic) id<ProfileModelDelegate> delegate;
 
-- (NSString*)getFio;
-- (NSString*)getEmail;
-- (NSString*)getPhone;
-- (NSString*)getAvatar;
-
+- (User*)currentUser;
 - (void)getProfile;
 - (void)updateProfileWithFio:(NSString*)strFio andEmail:(NSString*)strEmail andPhone:(NSString*)strPhone andAvatar:(NSString*)strAvatar;
 

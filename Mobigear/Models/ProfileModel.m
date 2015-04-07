@@ -27,30 +27,6 @@
 }
 
 
-- (NSString*)getFio {
-    
-    return self.currentUser.fio;
-}
-
-
-- (NSString*)getEmail {
-    
-    return self.currentUser.email;
-}
-
-
-- (NSString*)getPhone {
-    
-    return self.currentUser.phone;
-}
-
-
-- (NSString*)getAvatar {
-    
-    return self.currentUser.avatar;
-}
-
-
 - (void)getProfile {
     
     AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc] init];
@@ -97,7 +73,7 @@
 - (void)saveToCoreDataParameters:(NSDictionary*)parameters {
     
     NSDictionary *dictUser = [parameters objectForKey:@"user"];
-    User *user = [User MR_findFirst];
+    User *user = [self currentUser];
     if (![[dictUser objectForKey:@"fio"] isEqual:[NSNull null]]) {
         user.fio = [dictUser objectForKey:@"fio"];
     }

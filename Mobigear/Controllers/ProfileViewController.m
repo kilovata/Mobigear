@@ -10,6 +10,7 @@
 #import "ProfileModel.h"
 #import <SVProgressHUD/SVProgressHUD.h>
 #import <SDWebImage/UIButton+WebCache.h>
+#import "User.h"
 
 @interface ProfileViewController ()<ProfileModelDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
@@ -48,11 +49,11 @@
 
 - (void)initProfile {
     
-    self.textFieldFio.text = [self.profileModel getFio];
-    self.textFieldEmail.text = [self.profileModel getEmail];
-    self.textFieldPhone.text = [self.profileModel getPhone];
-    if ([self.profileModel getAvatar]) {
-        [self.buttonAvatar sd_setBackgroundImageWithURL:[NSURL URLWithString:[self.profileModel getAvatar]] forState:UIControlStateNormal placeholderImage:[UIImage imageNamed:@"picLoading"] options:SDWebImageRefreshCached];
+    self.textFieldFio.text = [self.profileModel currentUser].fio;
+    self.textFieldEmail.text = [self.profileModel currentUser].email;
+    self.textFieldPhone.text = [self.profileModel currentUser].phone;
+    if ([self.profileModel currentUser].avatar) {
+        [self.buttonAvatar sd_setBackgroundImageWithURL:[NSURL URLWithString:[self.profileModel currentUser].avatar] forState:UIControlStateNormal placeholderImage:[UIImage imageNamed:@"avatar"] options:SDWebImageRefreshCached];
     }
 }
 
@@ -96,9 +97,9 @@
 
 - (BOOL)isChangedTextFields {
     
-    if ([self.textFieldFio.text isEqualToString:[self.profileModel getFio]] &&
-        [self.textFieldEmail.text isEqualToString:[self.profileModel getEmail]] &&
-        [self.textFieldPhone.text isEqualToString:[self.profileModel getPhone]]) {
+    if ([self.textFieldFio.text isEqualToString:[self.profileModel currentUser].fio] &&
+        [self.textFieldEmail.text isEqualToString:[self.profileModel currentUser].email] &&
+        [self.textFieldPhone.text isEqualToString:[self.profileModel currentUser].phone]) {
         return NO;
     } else {
         return YES;
